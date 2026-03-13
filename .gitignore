@@ -1,0 +1,63 @@
+# MOMO Git Ignore File
+
+# 系统文件
+.DS_Store
+Thumbs.db
+.AppleDouble
+
+# 日志文件
+*.log
+logs/
+
+# 配置文件（包含敏感信息）
+*.env
+.env.local
+.env.*.local
+openclaw.json
+credentials/
+
+# 依赖
+node_modules/
+package-lock.json
+yarn.lock
+
+# 构建输出
+dist/
+build/
+*.min.js
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.bak
+
+# 测试覆盖率
+coverage/
+
+# 本地配置
+config.local.*
+*.local.*
+
+# 敏感信息
+*.key
+*.pem
+*.crt
+*.secret
+
+# MOMO 特定
+memory/*.md
+!memory/README.md
+workspace/memory/
