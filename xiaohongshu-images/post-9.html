@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMO 配图 9 - 代码示例</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .post {
+            width: 1080px;
+            height: 1440px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .title {
+            font-size: 56px;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .subtitle {
+            font-size: 26px;
+            color: #e94560;
+        }
+        .demo {
+            background: #1e1e1e;
+            border-radius: 20px;
+            padding: 40px;
+            flex: 1;
+            overflow: hidden;
+        }
+        .demo-header {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+        .dot.red { background: #ff5f56; }
+        .dot.yellow { background: #ffbd2e; }
+        .dot.green { background: #27ca40; }
+        .conversation {
+            font-family: "Monaco", "Consolas", monospace;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .user {
+            color: #569cd6;
+            margin-bottom: 20px;
+        }
+        .momo {
+            color: #d4d4d4;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #e94560;
+        }
+        .keyword { color: #569cd6; }
+        .string { color: #ce9178; }
+        .comment { color: #6a9955; }
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 18px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <div class="header">
+            <h1 class="title">💬 和 MOMO 对话写代码</h1>
+            <p class="subtitle">像聊天一样编程</p>
+        </div>
+        <div class="demo">
+            <div class="demo-header">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+            <div class="conversation">
+                <div class="user">你：帮我写个 Python 函数，计算斐波那契数列</div>
+                <div class="momo">
+                    汪！马上！💻<br><br>
+                    <span class="keyword">def</span> <span class="string">fibonacci</span>(n):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">"""计算斐波那契数列"""</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> n <= <span class="string">1</span>:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> n<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> fibonacci(n-<span class="string">1</span>) + fibonacci(n-<span class="string">2</span>)<br><br>
+                    <span class="comment"># 调用示例</span><br>
+                    print(fibonacci(<span class="string">10</span>))  <span class="comment"># 输出：55</span>
+                </div>
+                <div class="user">你：能解释一下吗？</div>
+                <div class="momo">
+                    汪！当然！🐾<br><br>
+                    这是递归实现：<br>
+                    1. n<=1 时，直接返回 n<br>
+                    2. 否则返回前两个数之和<br>
+                    3. 时间复杂度：O(2^n)<br><br>
+                    需要优化版本吗？
+                </div>
+            </div>
+        </div>
+        <div class="footer">GitHub: Cheng2121qwq/momo</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMO 配图 6 - 功能详解</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .post {
+            width: 1080px;
+            height: 1440px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .title {
+            font-size: 64px;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 28px;
+            color: rgba(255,255,255,0.9);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            flex: 1;
+        }
+        .feature-card {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        .feature-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .feature-name {
+            font-size: 28px;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .feature-desc {
+            font-size: 18px;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+            font-size: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <div class="header">
+            <h1 class="title">🐾 MOMO 全功能详解</h1>
+            <p class="subtitle">一只 AI 小狗狗能做什么？</p>
+        </div>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📸</div>
+                <div class="feature-name">截图发送</div>
+                <div class="feature-desc">一键截图，直接发送到飞书，不用切屏</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📁</div>
+                <div class="feature-name">文件管理</div>
+                <div class="feature-desc">整理、重命名、搜索文件，系统级操作</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💻</div>
+                <div class="feature-name">编程辅助</div>
+                <div class="feature-desc">写代码、Debug、查文档、环境配置</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+                <div class="feature-name">文档操作</div>
+                <div class="feature-desc">创建、编辑、整理飞书文档和知识库</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎓</div>
+                <div class="feature-name">学习助手</div>
+                <div class="feature-desc">作业管理、笔记整理、番茄钟、提醒</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <div class="feature-name">智能对话</div>
+                <div class="feature-desc">有性格、会卖萌、记住你的事</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🗂️</div>
+                <div class="feature-name">云盘管理</div>
+                <div class="feature-desc">上传、下载、分享飞书云盘文件</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <div class="feature-name">记忆系统</div>
+                <div class="feature-desc">记住偏好、习惯、重要事情</div>
+            </div>
+        </div>
+        <div class="footer">GitHub: Cheng2121qwq/momo · 免费开源</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMO 配图 11 - 办公场景</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .post {
+            width: 1080px;
+            height: 1440px;
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .title {
+            font-size: 64px;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .scenarios {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        .scenario {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 30px;
+        }
+        .scenario-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .scenario-title {
+            font-size: 26px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .scenario-list {
+            list-style: none;
+        }
+        .scenario-list li {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .scenario-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #fa709a;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            font-size: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <div class="header">
+            <h1 class="title">💼 MOMO 办公场景</h1>
+            <p class="subtitle">打工人效率神器</p>
+        </div>
+        <div class="scenarios">
+            <div class="scenario">
+                <div class="scenario-icon">📸</div>
+                <div class="scenario-title">会议记录</div>
+                <ul class="scenario-list">
+                    <li>一键截图分享</li>
+                    <li>自动整理纪要</li>
+                    <li>发送飞书群聊</li>
+                </ul>
+            </div>
+            <div class="scenario">
+                <div class="scenario-icon">📊</div>
+                <div class="scenario-title">数据处理</div>
+                <ul class="scenario-list">
+                    <li>批量处理文件</li>
+                    <li>自动生成报表</li>
+                    <li>数据格式转换</li>
+                </ul>
+            </div>
+            <div class="scenario">
+                <div class="scenario-icon">📧</div>
+                <div class="scenario-title">邮件管理</div>
+                <ul class="scenario-list">
+                    <li>起草邮件模板</li>
+                    <li>整理收件箱</li>
+                    <li>设置提醒回复</li>
+                </ul>
+            </div>
+            <div class="scenario">
+                <div class="scenario-icon">📁</div>
+                <div class="scenario-title">文件整理</div>
+                <ul class="scenario-list">
+                    <li>自动分类归档</li>
+                    <li>批量重命名</li>
+                    <li>快速搜索定位</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">GitHub: Cheng2121qwq/momo · 免费开源</div>
+    </div>
+</body>
+</html>

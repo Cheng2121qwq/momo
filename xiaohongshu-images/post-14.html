@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMO 配图 14 - 常见问题</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .post {
+            width: 1080px;
+            height: 1440px;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .title {
+            font-size: 64px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .faq {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .faq-item {
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            padding: 25px;
+        }
+        .question {
+            font-size: 22px;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .answer {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            padding-left: 35px;
+        }
+        .footer {
+            text-align: center;
+            color: rgba(0,0,0,0.6);
+            font-size: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <div class="header">
+            <h1 class="title">❓ 常见问题 FAQ</h1>
+            <p class="subtitle">你可能想知道的</p>
+        </div>
+        <div class="faq">
+            <div class="faq-item">
+                <div class="question">❓ 完全免费吗？</div>
+                <div class="answer">是的！完全免费，开源项目，没有任何隐藏费用</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">❓ 安全吗？数据会上传吗？</div>
+                <div class="answer">本地运行，数据不上传，隐私安全</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">❓ 需要什么配置？</div>
+                <div class="answer">macOS/Windows/Linux，有 Node.js 即可</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">❓ 如何安装？</div>
+                <div class="answer">一行命令，3 分钟搞定（见安装教程）</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">❓ 有问题怎么办？</div>
+                <div class="answer">GitHub 提 issue，社区一起解决</div>
+            </div>
+        </div>
+        <div class="footer">更多问题？GitHub: Cheng2121qwq/momo</div>
+    </div>
+</body>
+</html>

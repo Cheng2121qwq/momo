@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMO 配图 8 - 时间管理</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .post {
+            width: 1080px;
+            height: 1440px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .title {
+            font-size: 64px;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .clock {
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            border: 8px solid rgba(255,255,255,0.3);
+            margin: 0 auto 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .time {
+            font-size: 72px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .label {
+            font-size: 24px;
+            color: rgba(255,255,255,0.8);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            flex: 1;
+        }
+        .feature {
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        .feature-name {
+            font-size: 22px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+            font-size: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <div class="header">
+            <h1 class="title">⏰ MOMO 时间管理</h1>
+            <p class="subtitle">告别拖延，效率翻倍</p>
+        </div>
+        <div class="clock">
+            <div class="time">25:00</div>
+            <div class="label">番茄钟</div>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🍅</div>
+                <div class="feature-name">番茄工作法</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📋</div>
+                <div class="feature-name">任务清单</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⏱️</div>
+                <div class="feature-name">倒计时</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔔</div>
+                <div class="feature-name">智能提醒</div>
+            </div>
+        </div>
+        <div class="footer">GitHub: Cheng2121qwq/momo</div>
+    </div>
+</body>
+</html>
