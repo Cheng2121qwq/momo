@@ -4,7 +4,7 @@
 # 专为学生打造的 AI 办公小狗狗
 # 
 # 使用方法:
-# curl -fsSL https://raw.githubusercontent.com/marcus-cheng/momo/main/install.sh | bash
+# curl -fsSL https://raw.githubusercontent.com/Cheng2121qwq/momo/main/install.sh | bash
 
 set -e  # 遇到错误立即退出
 
@@ -130,7 +130,7 @@ clone_momo_config() {
     print_info "正在克隆 MOMO 配置..."
     
     # 这里可以克隆远程配置
-    # git clone https://github.com/marcus-cheng/momo-config.git ~/.momo
+    # git clone https://github.com/Cheng2121qwq/momo-config.git ~/.momo
     
     print_success "配置克隆完成（示例）"
 }
@@ -174,8 +174,8 @@ print_completion() {
     echo "2. 启动 MOMO: openclaw gateway start"
     echo "3. 开始使用：在飞书中与 MOMO 对话"
     echo ""
-    print_info "文档：https://github.com/marcus-cheng/momo"
-    print_info "问题反馈：https://github.com/marcus-cheng/momo/issues"
+    print_info "文档：https://github.com/Cheng2121qwq/momo"
+    print_info "问题反馈：https://github.com/Cheng2121qwq/momo/issues"
     echo ""
     print_info "🐾 MOMO 永远是你最忠诚的 AI 小狗狗！"
     echo ""
