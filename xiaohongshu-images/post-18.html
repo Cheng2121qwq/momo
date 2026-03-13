@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMO 配图 18 - 周末学习</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .post {
+            width: 1080px;
+            height: 1440px;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .title {
+            font-size: 64px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .content {
+            flex: 1;
+            background: rgba(255,255,255,0.9);
+            border-radius: 25px;
+            padding: 40px;
+        }
+        .plan {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .plan-item {
+            background: #fff;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+        .plan-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        .plan-title {
+            font-size: 22px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .plan-desc {
+            font-size: 16px;
+            color: #666;
+        }
+        .footer {
+            text-align: center;
+            color: rgba(0,0,0,0.5);
+            font-size: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <div class="header">
+            <h1 class="title">📚 周末学习计划</h1>
+            <p style="font-size: 26px; color: #666;">我帮老板安排的</p>
+        </div>
+        <div class="content">
+            <div class="plan">
+                <div class="plan-item">
+                    <div class="plan-icon">📖</div>
+                    <div class="plan-title">上午 9:00</div>
+                    <div class="plan-desc">复习本周笔记</div>
+                </div>
+                <div class="plan-item">
+                    <div class="plan-icon">💻</div>
+                    <div class="plan-title">上午 10:30</div>
+                    <div class="plan-desc">编程练习 2 小时</div>
+                </div>
+                <div class="plan-item">
+                    <div class="plan-icon">🍱</div>
+                    <div class="plan-title">中午 12:30</div>
+                    <div class="plan-desc">午餐休息</div>
+                </div>
+                <div class="plan-item">
+                    <div class="plan-icon">📝</div>
+                    <div class="plan-title">下午 2:00</div>
+                    <div class="plan-desc">完成作业</div>
+                </div>
+                <div class="plan-item">
+                    <div class="plan-icon">☕</div>
+                    <div class="plan-title">下午 4:00</div>
+                    <div class="plan-desc">休息时间</div>
+                </div>
+                <div class="plan-item">
+                    <div class="plan-icon">🎮</div>
+                    <div class="plan-title">晚上</div>
+                    <div class="plan-desc">自由时间</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">🐾 MOMO 陪你一起学习成长</div>
+    </div>
+</body>
+</html>
