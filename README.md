@@ -11,7 +11,7 @@
 
 [立即安装](#-快速开始) · [查看文档](#-使用文档) · [问题反馈](https://github.com/marcus-cheng/momo/issues)
 
-![MOMO Banner](./github-banner.png)
+![MOMO Banner](https://via.placeholder.com/800x200/667eea/ffffff?text=🐾+MOMO+AI+Assistant)
 
 </div>
 
