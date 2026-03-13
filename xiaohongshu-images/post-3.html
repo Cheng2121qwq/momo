@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMO 小红书配图 3 - 程序员场景</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .post {
+            width: 1080px;
+            height: 1440px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 60px;
+            width: 100%;
+        }
+
+        .header {
+            margin-bottom: 50px;
+        }
+
+        .header-emoji {
+            font-size: 120px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 64px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 32px;
+            color: #e94560;
+            font-weight: 600;
+        }
+
+        .code-window {
+            background: #1e1e1e;
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            text-align: left;
+            font-family: "Monaco", "Consolas", monospace;
+        }
+
+        .code-header {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .code-dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+
+        .code-dot.red { background: #ff5f56; }
+        .code-dot.yellow { background: #ffbd2e; }
+        .code-dot.green { background: #27ca40; }
+
+        .code-content {
+            color: #d4d4d4;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .code-keyword { color: #569cd6; }
+        .code-function { color: #dcdcaa; }
+        .code-string { color: #ce9178; }
+        .code-comment { color: #6a9955; }
+        .code-number { color: #b5cea8; }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .stat-item {
+            background: rgba(233, 69, 96, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            border: 2px solid rgba(233, 69, 96, 0.3);
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #e94560;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .features {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .feature-tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 30px;
+            border-radius: 50px;
+            color: #ffffff;
+            font-size: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 40px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <div class="content">
+            <div class="header">
+                <div class="header-emoji">💻</div>
+                <h1 class="title">程序员效率神器</h1>
+                <p class="subtitle">每天少加班 2 小时！</p>
+            </div>
+
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dot red"></div>
+                    <div class="code-dot yellow"></div>
+                    <div class="code-dot green"></div>
+                </div>
+                <div class="code-content">
+<span class="code-comment"># MOMO 帮你写代码</span>
+<span class="code-keyword">def</span> <span class="code-function">batch_rename</span>(folder_path):
+    <span class="code-string">"""批量重命名文件"""</span>
+    files = os.listdir(folder_path)
+    <span class="code-keyword">for</span> i, file <span class="code-keyword">in</span> enumerate(files):
+        new_name = <span class="code-string">f"file_{i}.txt"</span>
+        os.rename(file, new_name)
+    <span class="code-keyword">return</span> <span class="code-string">f"✅ 已处理 {len(files)} 个文件"</span>
+
+<span class="code-comment"># 生成时间：0.5 秒 ⚡</span></div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">2h</div>
+                    <div class="stat-label">每天少加班</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50%</div>
+                    <div class="stat-label">效率提升</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">¥0</div>
+                    <div class="stat-label">免费开源</div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-tag">🐛 Debug 助手</div>
+                <div class="feature-tag">📝 代码生成</div>
+                <div class="feature-tag">📖 文档查询</div>
+                <div class="feature-tag">🔧 环境配置</div>
+            </div>
+        </div>
+
+        <div class="footer">GitHub: Cheng2121qwq/momo</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMO 小红书配图 2 - 学生场景</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .post {
+            width: 1080px;
+            height: 1440px;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 50%, #11998e 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 60px;
+            width: 100%;
+        }
+
+        .header {
+            margin-bottom: 50px;
+        }
+
+        .header-emoji {
+            font-size: 120px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 64px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 32px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .phone-mockup {
+            background: #ffffff;
+            border-radius: 40px;
+            padding: 40px;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .chat-bubble {
+            background: #f0f0f0;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .chat-bubble.user {
+            background: #38ef7d;
+            color: #ffffff;
+            margin-left: 50px;
+        }
+
+        .chat-bubble.momo {
+            background: #f0f0f0;
+            color: #333;
+            margin-right: 50px;
+        }
+
+        .chat-text {
+            font-size: 22px;
+            line-height: 1.5;
+        }
+
+        .chat-label {
+            font-size: 16px;
+            color: #999;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .features {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .feature-tag {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+            border-radius: 50px;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 600;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 40px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <div class="content">
+            <div class="header">
+                <div class="header-emoji">🎓</div>
+                <h1 class="title">大学生必备神器</h1>
+                <p class="subtitle">作业管理 · 笔记整理 · 编程辅助</p>
+            </div>
+
+            <div class="phone-mockup">
+                <div class="chat-bubble user">
+                    <div class="chat-label">你</div>
+                    <div class="chat-text">这周有什么作业？</div>
+                </div>
+
+                <div class="chat-bubble momo">
+                    <div class="chat-label">MOMO 🐾</div>
+                    <div class="chat-text">汪！帮你整理好了～<br><br>
+                    1️⃣ 数学 - 习题集 P50-55（周三）<br>
+                    2️⃣ 英语 - 作文一篇（周五）<br>
+                    3️⃣ 编程 - Python 项目（周日）<br><br>
+                    需要设置提醒吗？</div>
+                </div>
+
+                <div class="chat-bubble user">
+                    <div class="chat-label">你</div>
+                    <div class="chat-text">帮我写个 Python 脚本</div>
+                </div>
+
+                <div class="chat-bubble momo">
+                    <div class="chat-label">MOMO 🐾</div>
+                    <div class="chat-text">汪！马上！💻<br><br>
+                    ```python<br>
+                    def hello():<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Hello!")<br>
+                    ```<br><br>
+                    需要解释吗？</div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-tag">📚 作业管理</div>
+                <div class="feature-tag">📝 笔记整理</div>
+                <div class="feature-tag">⏰ 自动提醒</div>
+                <div class="feature-tag">🍅 番茄钟</div>
+            </div>
+        </div>
+
+        <div class="footer">GitHub: Cheng2121qwq/momo</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMO 小红书配图 5 - 开发故事</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .post {
+            width: 1080px;
+            height: 1440px;
+            background: linear-gradient(135deg, #FA8BFF 0%, #2BD2FF 50%, #2BFF88 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 60px;
+            width: 100%;
+        }
+
+        .header {
+            margin-bottom: 50px;
+        }
+
+        .header-emoji {
+            font-size: 100px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 56px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 28px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .timeline {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 50px;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-dot {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            flex-shrink: 0;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .timeline-content {
+            flex: 1;
+        }
+
+        .timeline-day {
+            font-size: 18px;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .timeline-text {
+            font-size: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 18px;
+        }
+
+        .quote {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 40px;
+        }
+
+        .quote-text {
+            font-size: 28px;
+            color: #ffffff;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .quote-author {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .cta {
+            background: #ffffff;
+            color: #667eea;
+            padding: 25px 60px;
+            border-radius: 50px;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 40px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <div class="content">
+            <div class="header">
+                <div class="header-emoji">🚀</div>
+                <h1 class="title">我自己做了个 AI 助手</h1>
+                <p class="subtitle">2 周开发历程大公开</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">💡</div>
+                    <div class="timeline-content">
+                        <div class="timeline-day">Day 1 - 想法诞生</div>
+                        <div class="timeline-text">
+                            "想要一个有性格的 AI 助手，不是冷冰冰的机器人"
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">🐕</div>
+                    <div class="timeline-content">
+                        <div class="timeline-day">Day 2 - 定义 MOMO</div>
+                        <div class="timeline-text">
+                            决定做成一只 AI 小狗狗！会摇尾巴、会卖萌、但干活不含糊
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">💻</div>
+                    <div class="timeline-content">
+                        <div class="timeline-day">Day 3-10 - 开发</div>
+                        <div class="timeline-text">
+                            基于 OpenClaw 开发，集成飞书、截图、文件管理、文档操作等功能
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">🎨</div>
+                    <div class="timeline-content">
+                        <div class="timeline-day">Day 11-13 - 设计</div>
+                        <div class="timeline-text">
+                            设计 Logo、海报、文档，准备开源发布
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">🎉</div>
+                    <div class="timeline-content">
+                        <div class="timeline-day">Day 14 - 发布</div>
+                        <div class="timeline-text">
+                            GitHub 开源！免费分享给大家使用～
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">14</div>
+                    <div class="stat-label">开发天数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">核心功能</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">¥0</div>
+                    <div class="stat-label">完全免费</div>
+                </div>
+            </div>
+
+            <div class="quote">
+                <div class="quote-text">
+                    "做这个不是为了赚钱，就是想要一个顺手的工具。<br>
+                    开源是因为相信开源的力量，想让更多人用上。"
+                </div>
+                <div class="quote-author">— MOMO 开发者</div>
+            </div>
+
+            <div class="cta">GitHub 开源中！⭐</div>
+        </div>
+
+        <div class="footer">GitHub: Cheng2121qwq/momo</div>
+    </div>
+</body>
+</html>
