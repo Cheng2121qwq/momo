@@ -4,12 +4,12 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw](https://img.shields.io/badge/Powered%20by-OpenClaw-blue)](https://github.com/openclaw/openclaw)
-[![Students Welcome](https://img.shields.io/badge/For-Students-green.svg)](https://github.com/marcus-cheng/momo)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/marcus-cheng/momo)
+[![Students Welcome](https://img.shields.io/badge/For-Students-green.svg)](https://github.com/Cheng2121qwq/momo)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/Cheng2121qwq/momo)
 
 > 🎓 **专为学生打造的 AI 助手** — 写作业、做笔记、管时间，样样都行！
 
-[立即安装](#-快速开始) · [查看文档](#-使用文档) · [问题反馈](https://github.com/marcus-cheng/momo/issues)
+[立即安装](#-快速开始) · [查看文档](#-使用文档) · [问题反馈](https://github.com/Cheng2121qwq/momo/issues)
 
 ![MOMO Banner](https://via.placeholder.com/800x200/667eea/ffffff?text=🐾+MOMO+AI+Assistant)
 
@@ -85,7 +85,7 @@
 
 ```bash
 # 复制粘贴，一键搞定！
-curl -fsSL https://raw.githubusercontent.com/marcus-cheng/momo/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Cheng2121qwq/momo/main/install.sh | bash
 ```
 
 安装完成后，重启终端，输入 `momo` 即可启动！
@@ -100,7 +100,7 @@ curl -fsSL https://raw.githubusercontent.com/marcus-cheng/momo/main/install.sh |
 npm install -g openclaw
 
 # 3. 克隆 MOMO 配置
-git clone https://github.com/marcus-cheng/momo.git ~/.momo
+git clone https://github.com/Cheng2121qwq/momo.git ~/.momo
 cd ~/.momo
 
 # 4. 复制配置到 OpenClaw
@@ -305,7 +305,7 @@ MOMO: 汪！别担心，每个人都有这个时候！💪
 
 ```bash
 # 1. Fork 仓库
-git clone https://github.com/YOUR_USERNAME/momo.git
+git clone https://github.com/Cheng2121qwq/momo.git
 cd momo
 
 # 2. 安装依赖
@@ -348,7 +348,7 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 
 感谢所有为 MOMO 做出贡献的小伙伴！
 
-[![Contributors](https://contrib.rocks/image?repo=marcus-cheng/momo)](https://github.com/marcus-cheng/momo/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=Cheng2121qwq/momo)](https://github.com/Cheng2121qwq/momo/graphs/contributors)
 
 ---
 
@@ -358,7 +358,7 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 |------|------|
 | 📧 Email | marcus@example.com |
 | 💬 飞书 | Marcus Cheng |
-| 🐙 GitHub | [@marcus-cheng](https://github.com/marcus-cheng) |
+| 🐙 GitHub | [@Cheng2121qwq](https://github.com/Cheng2121qwq) |
 | 🐦 Twitter | coming soon |
 | 📱 微信群 | 扫码加入（海报上有） |
 
